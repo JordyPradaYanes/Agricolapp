@@ -18,9 +18,9 @@
             <!-- MENU  -->
             <nav id="menu">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="formulario.html">Usuarios</a></li>
+                    <li><a href="#slider">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#usuario">Usuarios</a></li>
                 </ul>
             </nav>
             <!-- LIMPIAR FLOTADOS  -->
@@ -30,7 +30,7 @@
 
     <div id="slider" class="slider-big">
         <h1>Agricolapp</h1>
-        <a href="productos.html" class="btn-white">Ver Productos</a>
+        <a href="Html/productos.html" class="btn-white">Ver Productos</a>
     </div>
 
     <div class="center">
@@ -64,8 +64,120 @@
                 </article>
             </div>
 
-        </section>
+            <!-- Productos -->
 
+        </section>
+        <div class="center" id="productos">
+            <section id="content">
+                <h2 class="subheader">Últimos Productos</h2>
+                <div id="articles">
+                    <article class="article-item article-btn" id="article-template">
+      
+                      <div class="image-wrap">
+                            <img src="../images/header-platano.png" alt="banano">
+                        </div>
+                        <h2>Banano</h2>
+                        <span class="date">
+                           Precio: <span>2000</span>
+                        </span>
+                        <span>Peso: Libra</span>
+      
+                        <div class="clearflix"></div>
+      
+                    </article>
+      
+                    <article class="article-item article-btn" id="article-template">
+                      
+                      <div class="image-wrap">
+                            <img src="../images/Cebolla.jpg" alt="cebolla">
+                        </div>
+                        <h2>Cebolla</h2>
+                        <span class="date">
+                            Precio: 4500
+                        </span>
+                        <span>Peso: Libra</span>
+      
+                        <div class="clearflix"></div>
+      
+                    </article>
+      
+                    <article class="article-item article-btn" id="article-template">
+                      
+                      <div class="image-wrap">
+                            <img src="../images/Mandarina.webp" alt="mandarina">
+                        </div>
+                        <h2>Mandarina</h2>
+                        <span class="date">
+                            Precio: 2000
+                        </span>
+                      <span>Peso: Libra</span>
+      
+                        <div class="clearflix"></div>
+      
+                    </article>
+      
+                    <article class="article-item article-btn" id="article-template">
+                      
+                        <div class="image-wrap">
+                            <img src="../images/aguacate-papelillo-x-1-unidad.jpg" alt="aguacate">
+                        </div>
+                        <h2>Aguacate</h2>
+                        <span class="date">
+                            Precio: 5000
+                        </span>
+                        <span>
+                          Peso: C/U
+                        </span>
+      
+                        <div class="clearflix"></div>
+                        
+                    </article>
+      
+                </div>
+      
+            </section>
+
+             <!-- USUARIOS -->
+
+    <div class="center" id="usuario">
+        <section id="content">
+          <h1 class="subheader">Ingresar Usuario</h1>
+  
+          <form class="mid-form" id="formulario">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" class="errores" name="nombre">
+            </div>
+  
+            <div class="form-group">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" class="errores" name="nombre">
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="errores" name="email">
+            </div>
+  
+            <div class="form-group radiobtn">
+              <input type="radio" name="genero" id="hombre" value="hombre" /> Masculino
+              <input type="radio" name="genero" id="mujer" value="mujer" /> Femenino
+            </div>
+  
+            <div class="clearfix"></div>
+  
+            <input type="submit" id="guardar" value="Iniciar Sesión" class="btn btn-succes" />
+            <input type="submit" id="boton" value="Registrarse" class="btn btn-danger" />
+            <div id="error"></div>
+          </form>
+  
+        </section>
+  
+        <div class="clearfix"></div>
+      </div>
+
+            <!-- Buscador y contacto -->
+ 
         <aside id="sidebar">
 
             <div id="search" class="sidebar-item">
@@ -90,6 +202,8 @@
         <div class="clearfix"></div>
 
     </div>
+
+   
 
     <!-- FOOTER  -->
 

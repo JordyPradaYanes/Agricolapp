@@ -20,7 +20,7 @@
                 <ul>
                     <li><a href="#slider">Inicio</a></li>
                     <li><a href="#productos">Productos</a></li>
-                    <li><a href="#usuario">Usuarios</a></li>
+                    <li><a href="#user">Usuarios</a></li>
                 </ul>
             </nav>
             <!-- LIMPIAR FLOTADOS  -->
@@ -30,11 +30,11 @@
 
     <div id="slider" class="slider-big">
         <h1>Agricolapp</h1>
-        <a href="Html/productos.html" class="btn-white">Ver Productos</a>
+        <a href="#productos" class="btn-white">Ver Productos</a>
     </div>
 
     <div class="center">
-        <section id="content">
+        <section class="content">
 
             <div id="articles">
                 <article class="article-item article-btn" id="article-template">
@@ -64,11 +64,13 @@
                 </article>
             </div>
 
+        </section>
+
             <!-- Productos -->
 
-        </section>
-        <div class="center" id="productos">
-            <section id="content">
+        <section>
+        <div class="center">
+            <div class="content" id="productos">
                 <h2 class="subheader">Últimos Productos</h2>
                 <div id="articles">
                     <article class="article-item article-btn" id="article-template">
@@ -134,47 +136,45 @@
                     </article>
       
                 </div>
-      
-            </section>
+        </section>
 
              <!-- USUARIOS -->
 
-    <div class="center" id="usuario">
-        <section id="content">
-          <h1 class="subheader">Ingresar Usuario</h1>
-  
-          <form class="mid-form" id="formulario">
-            <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" class="errores" name="nombre">
-            </div>
-  
-            <div class="form-group">
-              <label for="apellido">Apellido</label>
-              <input type="text" id="apellido" class="errores" name="nombre">
-            </div>
-  
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" class="errores" name="email">
-            </div>
-  
-            <div class="form-group radiobtn">
-              <input type="radio" name="genero" id="hombre" value="hombre" /> Masculino
-              <input type="radio" name="genero" id="mujer" value="mujer" /> Femenino
-            </div>
-  
-            <div class="clearfix"></div>
-  
-            <input type="submit" id="guardar" value="Iniciar Sesión" class="btn btn-succes" />
-            <input type="submit" id="boton" value="Registrarse" class="btn btn-danger" />
-            <div id="error"></div>
-          </form>
-  
-        </section>
-  
+        <section>
+            <div class="center">
+                <div class="content" id="user">
+                    <h1 class="subheader">Ingresar Usuario</h1>
+            
+                    <form class="mid-form" id="formulario">
+                        <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" class="errores" name="nombre">
+                        </div>
+            
+                        <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" class="errores" name="nombre">
+                        </div>
+            
+                        <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="errores" name="email">
+                        </div>
+            
+                        <div class="form-group radiobtn">
+                        <input type="radio" name="genero" id="hombre" value="hombre" /> Masculino
+                        <input type="radio" name="genero" id="mujer" value="mujer" /> Femenino
+                        </div>
+            
+                        <div class="clearfix"></div>
+            
+                        <input type="submit" id="guardar" value="Iniciar Sesión" class="btn btn-succes" />
+                        <input type="submit" id="boton" value="Registrarse" class="btn btn-danger" />
+                        <div id="error"></div>
+                    </form>
+                </div>
+            </section>
         <div class="clearfix"></div>
-      </div>
 
             <!-- Buscador y contacto -->
  
@@ -198,9 +198,7 @@
             </div>
 
         </aside>
-
         <div class="clearfix"></div>
-
     </div>
 
    

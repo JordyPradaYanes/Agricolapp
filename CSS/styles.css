@@ -11,6 +11,10 @@ body{
     -moz-osx-font-smoothing: antialiased;
    
 }
+
+html {
+    scroll-behavior:smooth;
+}
 /* Encabezado */
 #header{
     height: 90px;
@@ -162,7 +166,7 @@ body{
     padding-bottom: 10px;
 }
 
-#content{
+.content{
     width: 100%;
     float: left;
     min-height: 650px;
@@ -422,7 +426,7 @@ textarea{
         line-height: 40px;
     }
 
-    #content{
+    .content{
         float: none;
         width: 100%;
     }
